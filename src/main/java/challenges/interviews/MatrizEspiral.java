@@ -28,8 +28,8 @@ public class MatrizEspiral {
 	private static List<List<Integer>> extraerSubFilas(List<List<Integer>> filas) {
 		List<List<Integer>> subFilas = new ArrayList<>();
 		for (int i = 1; i < filas.size() - 1; i++) {
-			int tamañoFila = filas.get(i).size();
-			List<Integer> subFila = filas.get(i).subList(1, tamañoFila - 1);
+			int tamanoFila = filas.get(i).size();
+			List<Integer> subFila = filas.get(i).subList(1, tamanoFila - 1);
 			subFilas.add(subFila);
 		}
 		return subFilas;
@@ -57,8 +57,8 @@ public class MatrizEspiral {
 		List<Integer> vector = new ArrayList<>();
 		for (int j = 1; j < filas.size() - 1; j++) {
 			if(i == -1) {
-				int tamañoFila = filas.get(j).size() - 1;
-				vector.add(filas.get(j).get(tamañoFila));
+				int tamanoFila = filas.get(j).size() - 1;
+				vector.add(filas.get(j).get(tamanoFila));
 			} else {
 				vector.add(filas.get(j).get(i));
 			}
