@@ -2,6 +2,7 @@ package challenges.interviews;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -15,5 +16,7 @@ public class SimpleArraySum {
 		int sumaReduce = arrg.stream().reduce(1, (a, b) -> a*b);
 		System.out.println(suma);
 		System.out.println(sumaReduce);
+		int randomNum = ThreadLocalRandom.current().nextInt(10000000, 100000000 + 1);
+		System.out.println(randomNum);
 	}
 }
