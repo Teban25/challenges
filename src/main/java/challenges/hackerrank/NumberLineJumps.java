@@ -1,4 +1,4 @@
-package challenges.interviews;
+package challenges.hackerrank;
 
 /**
  * You are choreographing a circus show with various animals. For one act, you are given two kangaroos on a number line ready to jump in the positive direction (i.e, toward positive infinity).

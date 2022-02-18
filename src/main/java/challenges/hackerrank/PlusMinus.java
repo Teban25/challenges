@@ -1,4 +1,4 @@
-package challenges.interviews;
+package challenges.hackerrank;
 
 import java.util.Arrays;
 import java.util.List;

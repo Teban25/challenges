@@ -1,4 +1,4 @@
-package challenges.interviews;
+package challenges.hackerrank;
 
 import java.math.BigInteger;
 
