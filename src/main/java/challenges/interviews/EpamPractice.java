@@ -87,39 +87,6 @@ public class EpamPractice {
                 .collect(Collectors.toMap(map -> map.getKey(), map -> map.getValue()));
     }
 
-    // You have an array of ints that is ordered
-    // [2,4,5,7,9,10,13,16,18,20,23,25]
-    // It has been pivoted, so there are 2 ordered parts to it
-    // [18,20,23,25, 2,4,5,7,9,10,13,16]
-    // Write a method that finds a value in Olog(n) efficiency or better
-    // Here is your stub:
-    public static int pivotFind(int val, int[] pivot){
-        int pivotIndex = findPivot(pivot, 0, pivot.length - 1);
-        return 0;
-    }
-
-    private static int findPivot(int[] pivot, int low, int high) {
-        if(high < low) {
-            return -1;
-        }
-
-        if(high == low) {
-            return low;
-        }
-
-        int middle = (low + high) / 2;
-
-        if(middle < high && pivot[middle] > pivot[middle + 1]) {
-            return middle;
-        }
-        if(middle > low && pivot[middle] < pivot[middle - 1]) {
-            return (middle - 1);
-        }
-
-        //TODO - finish the code for this example
-        return 0;
-    }
-
     public static void printTransactions() {
         List<Map<String, Integer>> transactions = List.of(Map.of("eur", 100, "usd", 200),
                 Map.of("usd", 200, "cop", 400), Map.of("usd", 300, "cop", 500));

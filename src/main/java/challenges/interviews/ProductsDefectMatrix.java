@@ -9,10 +9,10 @@ public class ProductsDefectMatrix {
 	public static void main(String[] args) {
 		List<List<Integer>> matrixOriginal = new ArrayList<>();
 		List<Integer> row1 = Arrays.asList(1,0,0,0,1);
-		List<Integer> row2 = Arrays.asList(1,0,0,1,1);
-		List<Integer> row3 = Arrays.asList(0,0,0,1,0);
-		List<Integer> row4 = Arrays.asList(0,1,1,1,1);
-		List<Integer> row5 = Arrays.asList(0,1,0,1,0);
+		List<Integer> row2 = Arrays.asList(1,1,1,1,1);
+		List<Integer> row3 = Arrays.asList(1,1,1,1,0);
+		List<Integer> row4 = Arrays.asList(1,1,1,1,1);
+		List<Integer> row5 = Arrays.asList(1,1,1,1,0);
 		matrixOriginal.add(row1);
 		matrixOriginal.add(row2);
 		matrixOriginal.add(row3);
@@ -45,7 +45,7 @@ public class ProductsDefectMatrix {
 					List<List<Integer>> subMatrix = extractSquareSubMatrix(matrixOriginal, initialRow, initialRow + dimensionN, initialCol, initialCol + dimensionN);
 					boolean subMatrixContainZeros = containZeros(subMatrix);
 					if (!subMatrixContainZeros) {
-						System.out.println(subMatrix.toString());
+						System.out.println(subMatrix);
 						return subMatrix.size();
 					}
 				}
